@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HZShapeView"
-  s.version      = "0.0.6"
+  s.version      = "0.0.1"
   s.summary      = "自定义View的圆角方向"
 
   # This description is used to generate tags and improve search results.
