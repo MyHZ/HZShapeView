@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+FOUNDATION_STATIC_INLINE BOOL NSStringIsNull (NSString *string){
+    return string.length == 0 ||
+    [string isKindOfClass:[NSNull class]] ||
+    string == nil;
+}
+
 @interface ViewController : UIViewController
 
 

@@ -13,6 +13,7 @@
 		CE5EC6622080569C0025DFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC6612080569C0025DFB6 /* Assets.xcassets */; };
 		CE5EC6652080569C0025DFB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC6632080569C0025DFB6 /* LaunchScreen.storyboard */; };
 		CE5EC6682080569C0025DFB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC6672080569C0025DFB6 /* main.m */; };
+		CE5EC671208056AE0025DFB6 /* HZShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC670208056AE0025DFB6 /* HZShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CE5EC6642080569C0025DFB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5EC6662080569C0025DFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5EC6672080569C0025DFB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE5EC66F208056AE0025DFB6 /* HZShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZShapeView.h; sourceTree = "<group>"; };
+		CE5EC670208056AE0025DFB6 /* HZShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		CE5EC6572080569C0025DFB6 /* HZShapeView */ = {
 			isa = PBXGroup;
 			children = (
+				CE5EC66E208056AE0025DFB6 /* ShapeView */,
 				CE5EC6582080569C0025DFB6 /* AppDelegate.h */,
 				CE5EC6592080569C0025DFB6 /* AppDelegate.m */,
 				CE5EC65B2080569C0025DFB6 /* ViewController.h */,
@@ -69,6 +73,15 @@
 				CE5EC6672080569C0025DFB6 /* main.m */,
 			);
 			path = HZShapeView;
+			sourceTree = "<group>";
+		};
+		CE5EC66E208056AE0025DFB6 /* ShapeView */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EC66F208056AE0025DFB6 /* HZShapeView.h */,
+				CE5EC670208056AE0025DFB6 /* HZShapeView.m */,
+			);
+			path = ShapeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +156,7 @@
 			files = (
 				CE5EC65D2080569C0025DFB6 /* ViewController.m in Sources */,
 				CE5EC6682080569C0025DFB6 /* main.m in Sources */,
+				CE5EC671208056AE0025DFB6 /* HZShapeView.m in Sources */,
 				CE5EC65A2080569C0025DFB6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
