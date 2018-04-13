@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDF7D0D12080EABE00B0C4C7 /* HZShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF7D0CF2080EABE00B0C4C7 /* HZShapeView.m */; };
 		CE5EC65A2080569C0025DFB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC6592080569C0025DFB6 /* AppDelegate.m */; };
 		CE5EC65D2080569C0025DFB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC65C2080569C0025DFB6 /* ViewController.m */; };
 		CE5EC6602080569C0025DFB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC65E2080569C0025DFB6 /* Main.storyboard */; };
 		CE5EC6622080569C0025DFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC6612080569C0025DFB6 /* Assets.xcassets */; };
 		CE5EC6652080569C0025DFB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC6632080569C0025DFB6 /* LaunchScreen.storyboard */; };
 		CE5EC6682080569C0025DFB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC6672080569C0025DFB6 /* main.m */; };
-		CE5EC671208056AE0025DFB6 /* HZShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC670208056AE0025DFB6 /* HZShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDF7D0CF2080EABE00B0C4C7 /* HZShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HZShapeView.m; path = HZShapeView/HZShapeView.m; sourceTree = SOURCE_ROOT; };
+		BDF7D0D02080EABE00B0C4C7 /* HZShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HZShapeView.h; path = HZShapeView/HZShapeView.h; sourceTree = SOURCE_ROOT; };
 		CE5EC6552080569C0025DFB6 /* HZShapeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZShapeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5EC6582080569C0025DFB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE5EC6592080569C0025DFB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		CE5EC6642080569C0025DFB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5EC6662080569C0025DFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5EC6672080569C0025DFB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE5EC66F208056AE0025DFB6 /* HZShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZShapeView.h; sourceTree = "<group>"; };
-		CE5EC670208056AE0025DFB6 /* HZShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,11 +42,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDF7D0CC2080EA5500B0C4C7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EC6582080569C0025DFB6 /* AppDelegate.h */,
+				CE5EC6592080569C0025DFB6 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BDF7D0CD2080EA6D00B0C4C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EC65B2080569C0025DFB6 /* ViewController.h */,
+				CE5EC65C2080569C0025DFB6 /* ViewController.m */,
+				CE5EC65E2080569C0025DFB6 /* Main.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BDF7D0CE2080EA7A00B0C4C7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE5EC6612080569C0025DFB6 /* Assets.xcassets */,
+				CE5EC6632080569C0025DFB6 /* LaunchScreen.storyboard */,
+				CE5EC6662080569C0025DFB6 /* Info.plist */,
+				CE5EC6672080569C0025DFB6 /* main.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		CE5EC64C2080569C0025DFB6 = {
 			isa = PBXGroup;
 			children = (
-				CE5EC66E208056AE0025DFB6 /* HZShapeViewFiles */,
-				CE5EC6572080569C0025DFB6 /* HZShapeView */,
+				BDF7D0CE2080EA7A00B0C4C7 /* Resource */,
+				BDF7D0CD2080EA6D00B0C4C7 /* ViewController */,
+				BDF7D0CC2080EA5500B0C4C7 /* AppDelegate */,
+				CE5EC66E208056AE0025DFB6 /* HZShapeView */,
 				CE5EC6562080569C0025DFB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,28 +91,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE5EC6572080569C0025DFB6 /* HZShapeView */ = {
+		CE5EC66E208056AE0025DFB6 /* HZShapeView */ = {
 			isa = PBXGroup;
 			children = (
-				CE5EC6582080569C0025DFB6 /* AppDelegate.h */,
-				CE5EC6592080569C0025DFB6 /* AppDelegate.m */,
-				CE5EC65B2080569C0025DFB6 /* ViewController.h */,
-				CE5EC65C2080569C0025DFB6 /* ViewController.m */,
-				CE5EC65E2080569C0025DFB6 /* Main.storyboard */,
-				CE5EC6612080569C0025DFB6 /* Assets.xcassets */,
-				CE5EC6632080569C0025DFB6 /* LaunchScreen.storyboard */,
-				CE5EC6662080569C0025DFB6 /* Info.plist */,
-				CE5EC6672080569C0025DFB6 /* main.m */,
+				BDF7D0D02080EABE00B0C4C7 /* HZShapeView.h */,
+				BDF7D0CF2080EABE00B0C4C7 /* HZShapeView.m */,
 			);
-			path = HZShapeView;
-			sourceTree = "<group>";
-		};
-		CE5EC66E208056AE0025DFB6 /* HZShapeViewFiles */ = {
-			isa = PBXGroup;
-			children = (
-				CE5EC66F208056AE0025DFB6 /* HZShapeView.h */,
-				CE5EC670208056AE0025DFB6 /* HZShapeView.m */,
-			);
+			name = HZShapeView;
 			path = HZShapeViewFiles;
 			sourceTree = "<group>";
 		};
@@ -156,7 +173,7 @@
 			files = (
 				CE5EC65D2080569C0025DFB6 /* ViewController.m in Sources */,
 				CE5EC6682080569C0025DFB6 /* main.m in Sources */,
-				CE5EC671208056AE0025DFB6 /* HZShapeView.m in Sources */,
+				BDF7D0D12080EABE00B0C4C7 /* HZShapeView.m in Sources */,
 				CE5EC65A2080569C0025DFB6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HZShapeView/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CocoaJason.HZShapeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -314,8 +333,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HZShapeView/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,6 +343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CocoaJason.HZShapeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
