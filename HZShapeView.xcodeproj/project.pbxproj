@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		54DDE75C695BD82502A371E4 /* libPods-HZShapeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAEBA3C0B1DF226B3B6903 /* libPods-HZShapeView.a */; };
+		BDF7D0A92080E31200B0C4C7 /* HZShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF7D0A72080E31200B0C4C7 /* HZShapeView.m */; };
 		CE5EC65A2080569C0025DFB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC6592080569C0025DFB6 /* AppDelegate.m */; };
 		CE5EC65D2080569C0025DFB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC65C2080569C0025DFB6 /* ViewController.m */; };
 		CE5EC6602080569C0025DFB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC65E2080569C0025DFB6 /* Main.storyboard */; };
 		CE5EC6622080569C0025DFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC6612080569C0025DFB6 /* Assets.xcassets */; };
 		CE5EC6652080569C0025DFB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5EC6632080569C0025DFB6 /* LaunchScreen.storyboard */; };
 		CE5EC6682080569C0025DFB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5EC6672080569C0025DFB6 /* main.m */; };
-		CEA59C112080B4A9009D3BC9 /* HZShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA59C102080B4A8009D3BC9 /* HZShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00211C12923E03D534B024E8 /* Pods-HZShapeView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZShapeView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZShapeView/Pods-HZShapeView.debug.xcconfig"; sourceTree = "<group>"; };
 		05BAEBA3C0B1DF226B3B6903 /* libPods-HZShapeView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZShapeView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F8B0B9C5D616A3D2C0C9BE5 /* Pods-HZShapeView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZShapeView.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZShapeView/Pods-HZShapeView.release.xcconfig"; sourceTree = "<group>"; };
+		BDF7D0A72080E31200B0C4C7 /* HZShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZShapeView.m; sourceTree = "<group>"; };
+		BDF7D0A82080E31200B0C4C7 /* HZShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZShapeView.h; sourceTree = "<group>"; };
 		CE5EC6552080569C0025DFB6 /* HZShapeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZShapeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5EC6582080569C0025DFB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE5EC6592080569C0025DFB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		CE5EC6642080569C0025DFB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5EC6662080569C0025DFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5EC6672080569C0025DFB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CEA59C0F2080B4A8009D3BC9 /* HZShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZShapeView.h; sourceTree = "<group>"; };
-		CEA59C102080B4A8009D3BC9 /* HZShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BDF7D0A62080E31200B0C4C7 /* HZShapeViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BDF7D0A72080E31200B0C4C7 /* HZShapeView.m */,
+				BDF7D0A82080E31200B0C4C7 /* HZShapeView.h */,
+			);
+			path = HZShapeViewClasses;
+			sourceTree = "<group>";
+		};
 		CE5EC64C2080569C0025DFB6 = {
 			isa = PBXGroup;
 			children = (
+				BDF7D0A62080E31200B0C4C7 /* HZShapeViewClasses */,
 				CE5EC6572080569C0025DFB6 /* HZShapeView */,
 				CE5EC6562080569C0025DFB6 /* Products */,
 				7CA3DD674EDF696B8C356026 /* Pods */,
@@ -85,7 +95,6 @@
 		CE5EC6572080569C0025DFB6 /* HZShapeView */ = {
 			isa = PBXGroup;
 			children = (
-				CEA59C0E2080B4A8009D3BC9 /* HZShapeView */,
 				CE5EC6582080569C0025DFB6 /* AppDelegate.h */,
 				CE5EC6592080569C0025DFB6 /* AppDelegate.m */,
 				CE5EC65B2080569C0025DFB6 /* ViewController.h */,
@@ -95,15 +104,6 @@
 				CE5EC6632080569C0025DFB6 /* LaunchScreen.storyboard */,
 				CE5EC6662080569C0025DFB6 /* Info.plist */,
 				CE5EC6672080569C0025DFB6 /* main.m */,
-			);
-			path = HZShapeView;
-			sourceTree = "<group>";
-		};
-		CEA59C0E2080B4A8009D3BC9 /* HZShapeView */ = {
-			isa = PBXGroup;
-			children = (
-				CEA59C0F2080B4A8009D3BC9 /* HZShapeView.h */,
-				CEA59C102080B4A8009D3BC9 /* HZShapeView.m */,
 			);
 			path = HZShapeView;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			files = (
 				CE5EC65D2080569C0025DFB6 /* ViewController.m in Sources */,
 				CE5EC6682080569C0025DFB6 /* main.m in Sources */,
-				CEA59C112080B4A9009D3BC9 /* HZShapeView.m in Sources */,
+				BDF7D0A92080E31200B0C4C7 /* HZShapeView.m in Sources */,
 				CE5EC65A2080569C0025DFB6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
