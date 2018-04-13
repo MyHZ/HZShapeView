@@ -1,15 +1,11 @@
 # HZShapeView
 
-#CocoaPods支持
+#Demo地址 
+https://github.com/MyHZ/HZShapeViewExample
+
+#CocoaPods
 ```
-You want to add pod 'HZShapeView', '~> 0.0' similar to the following to your Podfile:
-
-target 'MyApp' do
-  pod 'HZShapeView', '~> 0.0'
-end
-Then run a pod install inside your terminal, or from CocoaPods.app.
-
-
+pod 'HZShapeView'
 ```
 
 #简书地址
