@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HZShapeView.h"
 
 @interface ViewController ()
 
@@ -18,11 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    HZShapeView* shapeView = [HZShapeView ShapeViewFrame:CGRectMake(10, 10, 200, 100) byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 100)];
-    shapeView.layer.shadowColor = [UIColor redColor].CGColor;
-    shapeView.layer.shadowOffset = CGSizeMake(0.f, 0.f);
-    shapeView.layer.shadowOpacity = 3.f;
-    [self.view addSubview:shapeView];
+   
     
 }
 
